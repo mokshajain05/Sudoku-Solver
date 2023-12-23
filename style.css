@@ -1,0 +1,159 @@
+/*
+.Heading is a class selector that targets elements with the class "Heading."
+width: 100%; sets the width of elements with this class to 100% of their container.
+display: flex; makes the elements use a flex layout.
+justify-content: center; horizontally centers the content within the element.
+align-items: center; vertically centers the content within the element.
+font-size: 40px; sets the font size to 40 pixels.
+font-weight: bolder; makes the text bolder.
+*/
+.Heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #FFC0CB;
+}
+
+/*
+.sudoku_grid is a class selector for elements with the class "sudoku_grid."
+display: flex; applies a flex layout to these elements.
+flex-direction: row; arranges the elements in a row horizontally.
+max-width: 578px; sets the maximum width of the grid to 578 pixels.
+flex-wrap: wrap; allows elements to wrap to the next line when the container width is exceeded.
+margin: 10px auto; adds 10 pixels of margin on all sides and horizontally centers the grid.
+*/
+.sudoku_grid{
+    display: flex;
+    flex-direction: row;
+    max-width: 578px;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+
+/*
+.sudoku_grid div selects all div elements within elements having the class "sudoku_grid."
+display: flex; applies a flex layout to these div elements.
+align-items: center; vertically centers the content within each div.
+justify-content: center; horizontally centers the content within each div.
+width: 60px; sets the width of each div to 60 pixels.
+height: 60px; sets the height of each div to 60 pixels.
+color: white; sets the text color to white.
+font-size: 40px; sets the font size to 40 pixels.
+box-sizing: border-box; ensures that padding and border are included in the element's total width and height.
+*/
+.sudoku_grid div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: black;
+    font-size: 40px;
+    box-sizing: border-box;
+}
+
+/*
+.Buttons is a class selector targeting elements with the class "Buttons."
+display: flex; applies a flex layout to these elements.
+justify-content: center; horizontally centers the content within the container.
+width: 100%; sets the width of these elements to 100% of their container.
+margin-bottom: 80px; adds 80 pixels of margin at the bottom of the container.
+*/
+.Buttons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+/*
+#GetPuzzle, #SolvePuzzle selects elements with the IDs "GetPuzzle" and "SolvePuzzle."
+display: inline-block; makes these elements inline blocks.
+text-decoration: none; removes underlines from text links.
+color: #fff; sets the text color to white.
+font-weight: bold; makes the text bold.
+background-color: #538fbe; sets the background color.
+padding: 10px 35px; adds padding around the buttons.
+font-size: 24px; sets the font size to 24 pixels.
+border: 1px solid #2d6898; adds a border to the buttons.
+box-shadow: inset 0px 1px 0px rgba(255, 255, 255, .3); adds a subtle shadow to the buttons.
+margin-right: 10px; adds margin to the right of the buttons.
+*/
+#GetPuzzle,#SolvePuzzle{
+    display: inline-block;
+    text-decoration: none;
+    color: #FFD2D2;
+    font-weight: bold;
+    background-color: black;
+    padding: 10px 35px;
+    font-size: 24px;
+    border: 1px solid #FF1493;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,.3);
+    margin-right: 10px;
+}
+
+/*
+.box1 selects elements with the class "box1."
+background-color: #1520A6; sets the background color.
+border: 2px solid white; adds a 2-pixel white border.
+*/
+.box1{
+    background-color: white;
+    border: 2px solid black;
+}
+
+/*
+.box1:hover selects elements with the class "box1" when hovered over.
+background-color: #48aaaD; changes the background color on hover.
+color: black; changes the text color on hover.
+*/
+.box1:hover{
+    background-color: #FFD2D2;
+    color: black;
+}
+
+/*
+The remaining .box2, .box2:hover, .box3, and .box3:hover sections are similar and define styles for other box elements in Sudoku grid. Additionally, .bl, .bb, .br, and .bt classes add borders to the boxes for different positions.
+*/
+.box2{
+    background-color: white;
+    border: 2px solid black;
+}
+
+.box2:hover{
+    background-color: #FFD2D2;
+}
+
+.box3{
+    background-color: white;
+    border: 2px solid black;
+}
+
+.box3:hover{
+    background-color: #FFD2D2;
+    color: black;
+}
+
+.bl{
+    border-left: 4px solid black;
+}
+
+.bb{
+    border-bottom: 4px solid black;
+}
+
+.br{
+    border-right: 4px solid black;
+}
+
+.bt{
+    border-top: 4px solid black;
+}
+
+/* Setting the background color of the 'body' element to black */
+body {
+    background-color: black;
+}
